@@ -1,0 +1,9 @@
+<h1>登录</h1>
+<%= simple_form_for(:session, url: "/login") do |f| %>
+
+  <%= f.input :email, label: '邮箱' %>
+  <%= f.input :password, label: '密码' %>
+
+  <%= f.submit "登录" %>
+
+<% end %>

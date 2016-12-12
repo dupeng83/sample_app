@@ -5,7 +5,15 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "主页Home",   '#' %></li>
         <li><%= link_to "帮助Help",   '#' %></li>
-        <li><%= link_to "注册Log in", '#' %></li>
+
+        <% unless user_logged_in? %>
+          <li><%= link_to "(bushi zhuce shi 登录)Log in", login_path %></li>
+        <% end %>
+
+        <% if user_logged_in? %>
+          <li><%= "Signed in as #{current_user.email}" %></li>
+          <li><%= link_to "退出", logout_path, method: :delete %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
