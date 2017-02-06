@@ -1,9 +1,9 @@
-# Ruby on Rails Tutorial sample application
+# 仿twitter的网站
 
-This is the sample application for
+这是跟随
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+所做的仿twitter的网站
 
 ## License
 
@@ -25,13 +25,7 @@ Next, migrate the database:
 $ rails db:migrate
 ```
 
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
+run the app in a local server:
 
 ```
 $ rails server
